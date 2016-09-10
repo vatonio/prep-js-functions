@@ -12,6 +12,9 @@
  *  functions.
  */
 
+ var a = 18;
+ var b = 24;
+ var c = 92;
 
 /**
  *  #2
@@ -21,7 +24,14 @@
  *  Store this value in a variable named `sum`.
  */
 
+function add(dog, cat){
+ return  dog + cat;
 
+
+}
+
+var sum = add(a, b);
+console.log(sum);
 /**
  *  #3
  *  Function - subtract
@@ -30,6 +40,14 @@
  *  Store this value in a variable named `difference`
  */
 
+function subtract(dog, cat){
+ return dog - cat;
+
+
+}
+
+var difference = subtract(a, b);
+console.log(difference);
 
 /**
  *  #4
@@ -38,6 +56,14 @@
  *  This function returns the result of multiplying `b` by `a`.
  *  Store this value in a variable named `product`
  */
+ function multiply(dog, cat){
+    return dog * cat;
+}
+
+
+ var product = multiply(a, b);
+ console.log("function multiply: ", product);
+
 
 
 /**
@@ -50,6 +76,13 @@
  *  value stored in `difference`.
  */
 
+function checkDifference(x){
+	return "My football team lost " + x + " times this week!";
+
+}
+var teamResults = checkDifference(difference)
+console.log(teamResults);
+
 
 /**
  *  #6
@@ -61,6 +94,11 @@
  *  stored in the variable `sum`.
  */
 
+function checkSum(x){
+	return "I CAN ADDZ " + x + " NUMBERS. ";
+}
+
+console.log(checkSum(sum));
 
 /**
  *  #7
@@ -71,6 +109,11 @@
  *  then prints the result to the console.
  */
 
+function checkProduct(white, green){
+	return white * green;
+}
+
+console.log(checkProduct(product, difference));
 
 /**
  *  #8
@@ -86,6 +129,13 @@
  *      addThenSubtract(4, 5, 7); //-> returns 2 because 4 + 5 - 7 = 2
  */
 
+ function addThenSubtract(red, white, blue){
+ 	var sum = add(red, white);
+ 	return subtract (sum, blue); 
+ }
+ 
+ console.log(addThenSubtract(a, b, c));
+
 
 /**
  *  #9
@@ -98,6 +148,12 @@
  *
  *  Store the return of this function to a variable named `howMany`
  */
+function addThenMultiply(red, white, blue){
+	return red + white * blue;
+}
+
+addThenMultiply(a, b, c);
+console.log(addThenMultiply(a, b, c));
 
 
 /**
@@ -116,6 +172,14 @@
  */
 
 
+ function createFullName(firstName, lastName){
+ 	return firstName + " " + lastName;
+ }
+
+var myFullName = createFullName(" Vai", "Atonio");
+cconsole.log(myFullName);
+
+
 /**
  *  #11
  *  Function - verifyDrinkingAge
@@ -131,6 +195,18 @@
  *  Store the return value to a variable named** `canDrinkBeer`
  */
 
+var myAge = 24
+function verifyDrinkingAge(Age){
+	if(Age >= 21)
+		return true;
+	else
+		return false;
+}
+verifyDrinkingAge(myAge);
+var canDrinkBeer = verifyDrinkingAge(myAge);
+console.log(canDrinkBeer);
+
+
 
 /**
  *  #12
@@ -141,7 +217,12 @@
  *  "The Party will have tons of Cake!" otherwise this message
  *  should be "This Party will have an open bar".
  */
-
+function throwParty(Age){
+	if(Age == false){
+		return "The Party will have tons of Cake!";
+	}else{
+		return "This Party will have an open bar";
+	
 
 /**
  *  #13
@@ -162,7 +243,9 @@
   *  **example output:**
  *      "Peter Bojanglesloves loves to eat California Burritos"
  */
+var food = "Kimchi"
 
+function eatfood(Name1, Name2, )
 
 /**
  *  #14
