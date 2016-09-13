@@ -80,7 +80,7 @@ function checkDifference(x){
 	return "My football team lost " + x + " times this week!";
 
 }
-var teamResults = checkDifference(difference)
+var teamResults = checkDifference(difference);
 console.log(teamResults);
 
 
@@ -152,6 +152,7 @@ function addThenMultiply(red, white, blue){
 	return red + white * blue;
 }
 
+var howMany = addThenMultiply(a, b, c);
 addThenMultiply(a, b, c);
 console.log(addThenMultiply(a, b, c));
 
@@ -195,16 +196,17 @@ cconsole.log(myFullName);
  *  Store the return value to a variable named** `canDrinkBeer`
  */
 
-var myAge = 24
+var myAge = 24;
 function verifyDrinkingAge(Age){
-	if(Age >= 21)
+	if(Age >= 21){
 		return true;
-	else
+	}else{
 		return false;
+	}
 }
-verifyDrinkingAge(myAge);
-var canDrinkBeer = verifyDrinkingAge(myAge);
-console.log(canDrinkBeer);
+
+var canDrinkBeer = verifyDrinkingAge(24);
+console.log("canDrinkBeer:" , canDrinkBeer);
 
 
 
@@ -218,11 +220,14 @@ console.log(canDrinkBeer);
  *  should be "This Party will have an open bar".
  */
 function throwParty(Age){
-	if(Age == false){
+	if(Age === false){
 		return "The Party will have tons of Cake!";
 	}else{
 		return "This Party will have an open bar";
-	
+	}
+}
+
+console.log(throwParty(canDrinkBeer));
 
 /**
  *  #13
@@ -243,10 +248,14 @@ function throwParty(Age){
   *  **example output:**
  *      "Peter Bojanglesloves loves to eat California Burritos"
  */
-var food = "Kimchi"
 
-function eatfood(Name1, Name2, )
+function eatfood(firstName, lastName, food){
+	
+	return createFullNameIfirstName + " " + lastName + " loves to eat " + food;
+}
 
+var foodILike = eatFood();
+console.log(eatFood("Vai", "Atonio", "Meat Jun"));
 /**
  *  #14
  *  Function - repeater
@@ -258,4 +267,19 @@ function eatfood(Name1, Name2, )
  *  the message will be `"Bacon Pancakes, makin' Bacon Pancakes..."`
  *  othewise the message will be `"Let it go.... LET IT GOOOOOOoOoOoOo..."`
  */
+
+function repeater(){
+	var msg;
+	if(canDrinkBeer === true){
+		msg = "bacon waffles;";
+	}else{
+		msg = "let it go";
+	}
+	for(var i = 0; i<howMany; i++){
+		console.log(msg);
+	}
+}
+repeater();
+
+//*
 
